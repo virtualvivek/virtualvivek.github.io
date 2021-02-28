@@ -150,13 +150,13 @@ h1,h2 {
     border: 0px;
     font-size: 20px;
     padding: 10px 15px;
-    box-shadow: 0 6px 12px #634a45;
+    box-shadow: 0 4px 4px #634a45;
     margin-top: 25px;
     cursor: pointer;
     -webkit-tap-highlight-color: transparent;
 }
 .button-accent:hover {
-    box-shadow: 0 10px 12px #634a45;
+    box-shadow: 0 4px 8px #634a45;
     transition: 0.2s ease;
 }
 .button-accent:active {
@@ -219,7 +219,7 @@ project-image {
 @media only screen and (max-width: 760px) {
     
     .site-wrapper {
-       padding-bottom: 200px; 
+       padding-bottom: 20px; 
     }
     h1 {
         font-size: 1.4em;
