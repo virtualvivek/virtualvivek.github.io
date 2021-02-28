@@ -224,6 +224,10 @@ project-image {
     .box {
         transform: rotate(-70deg);
     }
+    .header-navbar {
+        width: auto;
+        padding-right: 12px;
+    }
     .header-navbar a {
         color: #fff;
     }
@@ -281,6 +285,7 @@ project-image {
     }
     .project-image {
         margin-bottom: 25px;
+        width: 80vw;
     }
 }
 
