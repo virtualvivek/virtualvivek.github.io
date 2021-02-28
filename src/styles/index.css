@@ -223,9 +223,9 @@ h1,h2 {
         box-shadow: none;
     }
     .header-ancher {
-        width: 40%;
+        width: 120px;
         bottom: 5%;
-        left: 65%;
+        left: 75%;
     }
 }
 
