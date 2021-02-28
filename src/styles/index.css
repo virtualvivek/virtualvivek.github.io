@@ -92,7 +92,7 @@ h1,h2 {
     font-weight: 700;
 }
 .header-navbar {
-    width: inherit;
+    width: 90%;
     position: fixed;
     display: flex;
     list-style: none;
