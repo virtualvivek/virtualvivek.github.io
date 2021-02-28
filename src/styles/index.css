@@ -125,7 +125,7 @@ h1,h2 {
 .header-email img {
     width: 20px;
 }
-.header-social img{
+.header-social img {
     width: 32px;
     margin: 0 10px 0 0;
     border-radius: 50px;
@@ -187,6 +187,9 @@ h1,h2 {
 
 @media only screen and (max-width: 760px) {
     
+    h1 {
+        font-size: 1.4em;
+    }
     .box {
         transform: rotate(-70deg);
         position: fixed;
@@ -200,6 +203,9 @@ h1,h2 {
     .header-child {
         flex-direction: column-reverse;
     }
+    .header-child-details {
+        width: 90vw;
+    }
     .header-user-avatar {
         width: 180px;
         height: 180px;
@@ -207,10 +213,18 @@ h1,h2 {
         margin-bottom: 4vh;
     }
     .text-name {
-        font-size: 54px;
+        font-size: 46px;
     }
     .button-accent {
         font-size: 16px;
+    }
+    .header-social img {
+        box-shadow: none;
+    }
+    .header-ancher {
+        width: 40%;
+        bottom: 5%;
+        left: 65%;
     }
 }
 
