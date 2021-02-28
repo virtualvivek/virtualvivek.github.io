@@ -205,11 +205,12 @@ h1,h2 {
     }
     .header-child-details {
         width: 90vw;
+        padding-left: 10vw;
     }
     .header-user-avatar {
         width: 180px;
         height: 180px;
-        margin-left: 15vw;
+        margin-left: 5vw;
         margin-bottom: 4vh;
     }
     .text-name {
