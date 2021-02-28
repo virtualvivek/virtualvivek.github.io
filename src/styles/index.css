@@ -10,7 +10,6 @@ body{
 .site-wrapper {
     position: relative;
     overflow: hidden;
-    padding-bottom: 180px;
 }
 h1,h2 {
     margin: 0;
@@ -80,6 +79,10 @@ hr {
 .page {
     height: 100vh;
     width: 100vw;
+    display: inline-block;
+}
+.page.height-auto {
+    height: auto;
 }
 
 .header-navbar a,
@@ -221,9 +224,6 @@ project-image {
 
 @media only screen and (max-width: 760px) {
     
-    .site-wrapper {
-       padding-bottom: 20px; 
-    }
     h1 {
         font-size: 1.4em;
     }
