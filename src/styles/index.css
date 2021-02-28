@@ -204,7 +204,7 @@ h1,h2 {
         flex-direction: column-reverse;
     }
     .header-child-details {
-        width: 90vw;
+        width: max-content;
         padding-left: 10vw;
     }
     .header-user-avatar {
