@@ -225,7 +225,7 @@ h1,h2 {
     .header-ancher {
         width: 120px;
         bottom: 5%;
-        left: 75%;
+        right: 5px;
     }
 }
 
