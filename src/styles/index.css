@@ -7,6 +7,11 @@ body{
 	overflow-y:scroll;
     font-family: sans-serif;
 }
+.site-wrapper {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 180px;
+}
 h1,h2 {
     margin: 0;
     padding: 0
@@ -21,10 +26,7 @@ h1,h2 {
 }
 
 .wave {
-	position: fixed;
-	top: 0;
-	left: 0;
-    opacity: .4;
+    opacity: 0.4;
     position: absolute;
     top: 3%;
     left: 10%;
@@ -42,16 +44,14 @@ h1,h2 {
 .wave.-three {
   -webkit-animation: drift 7500ms infinite linear;
           animation: drift 7500ms infinite linear;
-	position: fixed;
 	background-color: #6C514C;
 }
 
 .wave.-two {
   -webkit-animation: drift 3000ms infinite linear;
           animation: drift 3000ms infinite linear;
-  opacity: .1;
-  background: #81635D;
-	position: fixed;
+    opacity: 0.1;
+    background: #81635D;
 }
 .box:after {
   content: '';
@@ -153,6 +153,7 @@ h1,h2 {
     box-shadow: 0 6px 12px #634a45;
     margin-top: 25px;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
 }
 .button-accent:hover {
     box-shadow: 0 10px 12px #634a45;
@@ -164,7 +165,6 @@ h1,h2 {
 }
 .header-ancher {
     width: 100%;
-    position: absolute;
     bottom: 45px;
     background: transparent;
     font-size: 46px;
@@ -198,7 +198,7 @@ h1,h2 {
 }
 .section-flex {
     width: 80vw;
-    padding: 5vw 0;
+    padding: 3vw 0;
     justify-content: space-between;
 }
 project-image {
@@ -206,7 +206,7 @@ project-image {
 }
 .project-info {
     max-width: 32vw;
-    padding-top: 20px;
+    padding-top: 15px;
     display: block;
 }
 .page-footer {
@@ -218,6 +218,9 @@ project-image {
 
 @media only screen and (max-width: 760px) {
     
+    .site-wrapper {
+       padding-bottom: 200px; 
+    }
     h1 {
         font-size: 1.4em;
     }
@@ -270,9 +273,8 @@ project-image {
         box-shadow: none;
     }
     .header-ancher {
-        width: 120px;
-        bottom: 5%;
-        right: 5px;
+        width: 100px;
+        margin-left: 65%;
     }
     .section-flex {
         flex-direction: column;

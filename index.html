@@ -15,10 +15,11 @@
     <!-- Icon tags -->
     <link rel="icon" href="assets/img/favicon.png" type="image/png" />
     <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon.png" />
-  
+    <!-- Style tags -->
     <link rel="stylesheet" href="./src/styles/index.css">
 </head>
 <body>
+<div class="site-wrapper">
 <div class='box'>
   <div class='wave -one'></div>
   <div class='wave -two'></div>
@@ -36,7 +37,7 @@
                 <h1>Hellow, <span>I'am</span></h1>
                 <h1 class="text-name">Vivek</h1>
                 <h1 class="text-title">Software Developer</h1>
-                <button class="button-accent">My Projects</button>
+                <button class="button-accent" onclick="smoothScroll('getting-projects');">My Projects</button>
                 <a class="header-email" href="mailto:virtualvivek7@gmail.com">
                     <img src="assets/icons/mail.svg"/>&nbsp; virtualvivek7@gmail.com
                 </a>
@@ -54,15 +55,16 @@
             </div>
             <img class="header-user-avatar" src="assets/img/anim_avatar.jpeg"/>
         </div>
-        <button class="header-ancher">▼</button>
+        <button class="header-ancher" onclick="smoothScroll('getting-projects');">▼</button>
     </div>
     <div class="page">
         <div class="page-wrapper">
-            <h1 class="text-name">Projects</h1>
+            <h1 class="text-name" id="getting-projects">Projects</h1>
+            <br>
             <div class="section-flex reverse">
                 <div>
                     <h1>BlurShadowImageView</h1>
-                    <span class="project-info">This library provides blurred drop shadows to <b>ImageView</b> similar to iOS backdrop shadows.Provides fast canvas draw as <b>no renderscript needed</b>.The similar shadow blurred effects can also be seen in iOS Music App.</span>
+                    <span class="project-info">This library provides blurred drop shadows to <b>ImageView</b> similar to iOS backdrop shadows.Provides fast canvas draw as <b>no renderscript needed</b></span>
                 </div>
                 <a href="https://github.com/virtualvivek/BlurShadowImageView" target="_blank">
                     <img class="project-image" src="assets/projects/project_blurshadowimageview.png"/>
@@ -84,5 +86,7 @@
             <span>© 2021 VIRTUALVIVEK</span>
         </div>
     </div>
+</div>
 </body>
+    <script src="src/js/script.js"></script>
 </html>
