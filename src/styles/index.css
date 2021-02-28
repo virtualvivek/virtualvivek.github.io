@@ -16,6 +16,9 @@ h1,h2 {
     margin: 0;
     padding: 0
 }
+hr {
+    opacity: 0.5;
+}
 
 /* waves style ****************************/
 .box {
@@ -286,9 +289,7 @@ project-image {
         max-width: max-content;
     }
     .project-image {
-        margin-bottom: 25px;
-        width: 80vw;
+        margin: 10px 0;
+        width: 90vw;
     }
 }
-
-
