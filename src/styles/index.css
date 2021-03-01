@@ -223,10 +223,12 @@ hr {
     background-color: #EEE;
 }
 .page-hr {
-    height: 4px;
-    width: 85%;
+    height: 10px;
+    width: 88%;
     margin-bottom: 10px;
-    opacity: 0.5;
+    margin-left: 5vw;
+    border-radius: 20px;
+    opacity: 0.2;
 }
 
 
@@ -239,23 +241,13 @@ hr {
         transform: rotate(-70deg);
     }
     .header-navbar {
-        width: auto;
-        padding-right: 12px;
-    }
-    .header-navbar a {
-        color: #fff;
+        width: 100%;
+        padding: 0;
+        border-radius: 0;
     }
     .header-navbar li {
-        filter: drop-shadow(2px 2px 2px #634A45);
-        background: #634A4599;
         padding: 10px;
-        margin-top: -12px;
-    }
-    .header-navbar li:first-child {
-        border-bottom-left-radius: 18px;
-    }
-    .header-navbar li:last-child {
-        border-bottom-right-radius: 18px;
+        filter: brightness(0.5);
     }
     .header-divider {
         height: 10vh;
@@ -298,5 +290,10 @@ hr {
     .project-image {
         margin: 10px 0;
         width: 90vw;
+    }
+}
+@-moz-document url-prefix() {
+    .header-navbar {
+        background-color: #EEEEEEEE;
     }
 }
