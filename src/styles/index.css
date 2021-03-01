@@ -42,19 +42,18 @@ hr {
   -webkit-animation: drift 7000ms infinite linear;
           animation: drift 7000ms infinite linear;
 }
-
-.wave.-three {
-  -webkit-animation: drift 7500ms infinite linear;
-          animation: drift 7500ms infinite linear;
-	background-color: #6C514C;
-}
-
 .wave.-two {
   -webkit-animation: drift 3000ms infinite linear;
           animation: drift 3000ms infinite linear;
     opacity: 0.1;
     background: #81635D;
 }
+.wave.-three {
+  -webkit-animation: drift 7500ms infinite linear;
+          animation: drift 7500ms infinite linear;
+	background-color: #6C514C;
+}
+
 .box:after {
   content: '';
   display: block;
@@ -92,6 +91,10 @@ hr {
 .page-footer {
     color: #634A45;
 }
+.button-primary,
+.page-hr {
+    background-color: #634A45;
+}
 .header-email,
 .header-navbar a {
     font-weight: 700;
@@ -123,10 +126,10 @@ hr {
     transition: 0.95s ease;
 }
 .header-email {
+    color: #444;
     padding: 25px 0;
     display: flex;
     line-height: 1.5;
-    color: #422F2B;
     width: max-content;
 }
 .header-email img {
@@ -148,38 +151,37 @@ hr {
 .text-name {
     font-size: 84px;
 }
-.button-accent {
-    background-color: #634A45;
+.button-primary {
     user-select: none;
     color: #fff;
-    border-radius: 12px;
+    border-radius: 10px;
     border: 0px;
-    font-size: 20px;
+    font-size: 18px;
     padding: 10px 15px;
-    box-shadow: 0 4px 4px #634a45;
     margin-top: 25px;
     cursor: pointer;
     -webkit-tap-highlight-color: transparent;
 }
-.button-accent:hover {
-    box-shadow: 0 4px 8px #634a45;
+.button-primary:hover {
+    box-shadow: 0 2px 8px #634a45;
     transition: 0.2s ease;
 }
-.button-accent:active {
+.button-primary:active {
     transform: scale(0.950, 0.950);
     opacity: 0.8;
 }
 .header-ancher {
-    width: 100%;
-    bottom: 45px;
+    width: 100px;
     background: transparent;
     font-size: 46px;
     border: none;
     cursor: pointer;
+    display: block;
+    margin: 0 auto;
 }
 
 
-.button-accent:focus,
+.button-primary:focus,
 .header-ancher:focus {
     outline: none;
 }
@@ -207,8 +209,8 @@ hr {
     padding: 3vw 0;
     justify-content: space-between;
 }
-project-image {
-    width: 550px;
+.project-image {
+    width: 510px;
 }
 .project-info {
     max-width: 32vw;
@@ -218,7 +220,13 @@ project-image {
 .page-footer {
     padding: 20px;
     text-align: center;
-    background-color: #eee;
+    background-color: #EEE;
+}
+.page-hr {
+    height: 4px;
+    width: 85%;
+    margin-bottom: 10px;
+    opacity: 0.5;
 }
 
 
@@ -269,14 +277,13 @@ project-image {
     .text-name {
         font-size: 46px;
     }
-    .button-accent {
+    .button-primary {
         font-size: 16px;
     }
     .header-social img {
         box-shadow: none;
     }
     .header-ancher {
-        width: 100px;
         margin-left: 65%;
     }
     .section-flex {
