@@ -161,7 +161,7 @@ hr {
 }
 .button-primary {
     user-select: none;
-    color: var(--color_light_primary)
+    color: var(--color_light_primary);
     border-radius: 10px;
     border: 0px;
     font-size: 18px;
