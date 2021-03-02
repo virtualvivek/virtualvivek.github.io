@@ -2,6 +2,7 @@
     --color_background: #F7F8FA;
     --color_primary: #634A45;
     --color_text: #444;
+    --color_light_primary: #FFF;
 }
 
 body{
@@ -160,7 +161,7 @@ hr {
 }
 .button-primary {
     user-select: none;
-    color: #fff;
+    color: var(--color_light_primary)
     border-radius: 10px;
     border: 0px;
     font-size: 18px;
@@ -254,7 +255,6 @@ hr {
     }
     .header-navbar li {
         padding: 10px;
-        filter: brightness(0.5);
     }
     .header-divider {
         height: 10vh;
