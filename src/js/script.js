@@ -1,3 +1,10 @@
+if(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches){
+    document.documentElement.style.setProperty('--color_background','#444');
+    document.documentElement.style.setProperty('--color_primary','#EFC6BE');
+    document.documentElement.style.setProperty('--color_text','#FAFAFA');
+}
+
+
 function currentYPosition() {
     // Firefox, Chrome, Opera, Safari
     if (self.pageYOffset) return self.pageYOffset;
