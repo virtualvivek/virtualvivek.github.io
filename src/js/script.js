@@ -20,7 +20,7 @@ function currentYPosition() {
 
 function elmYPosition(eID) {
     var elm = document.getElementById(eID);
-    var y = elm.offsetTop-50; // -50 for 50px padding
+    var y = elm.offsetTop-80; // -80 for 50px padding
     var node = elm;
     while (node.offsetParent && node.offsetParent != document.body) {
         node = node.offsetParent;
