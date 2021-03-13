@@ -17,7 +17,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon.png" />
     <!-- Style tags -->
     <script src="src/js/script.min.js"></script>
-    <link rel="stylesheet" href="./src/styles/index.min.css">
+    <link rel="stylesheet" href="./src/styles/index.css">
 </head>
 <body>
 <div class="site-wrapper">
@@ -30,6 +30,7 @@
         <ul class="header-navbar">
             <li><a href="#">Home</a></li>
             <li><a href="#" onclick="smoothScroll('getting-projects');">Projects</a></li>
+            <li><a href="#" onclick="smoothScroll('getting-blogs');">Blogs</a></li>
         </ul>
         <div class="header-divider"></div>
         <div class="header-child">
@@ -83,9 +84,25 @@
             </div>
             <hr>
         </div>
-        <div class="page-footer">
-            <span>© 2021 virtualvivek</span>
+    <div class="page-hr"></div>  
+    <div class="page height-auto">
+        <div class="page-wrapper">
+            <h1 class="text-name" id="getting-blogs">Blogs</h1>
+            <div class="section-flex">
+            <iframe class="iframe-blog" src="https://www.linkedin.com/embed/feed/update/urn:li:share:6694700432234819584"
+            height="765" width="504" frameborder="0" allowfullscreen="" title="Embedded post" loading="lazy">
+            </iframe>
+            <iframe class="iframe-blog" src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6768059442417274881"
+            height="419" width="504" frameborder="0" allowfullscreen="" title="Embedded post" loading="lazy">
+            </iframe>
+            </div>
+            <hr>
         </div>
+    </div>
+     
+    <div class="page-footer">
+        <span>© 2021 virtualvivek</span>
+    </div>
     </div>
 </div>
 </body>

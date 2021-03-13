@@ -238,6 +238,10 @@ hr {
     border-radius: 20px;
     opacity: 0.2;
 }
+.iframe-blog{
+    flex: 1;
+    margin: 10px;
+}
 
 
 @media only screen and (max-width: 760px) {
