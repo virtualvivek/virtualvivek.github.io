@@ -225,6 +225,9 @@ hr {
         margin-left: 5vw;
         margin-bottom: 4vh;
     }
+    .header-email {
+        margin: 18px 0;
+    }
     .foreground {
         height: 68vh;
     }
