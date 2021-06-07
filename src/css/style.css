@@ -22,6 +22,7 @@
 	left: 0;
 	right: 0;
 	text-align: center;
+    z-index: 99;
 }
 .scroll-btn a {
     display: inline-block;
@@ -38,11 +39,11 @@
 }
 .scroll-btn .mouse > * {
 	position: absolute;
-    width: 8px;
-    height: 8px;
-    left: 38%;
+    width: 4px;
+    height: 14px;
+    left: 45%;
     display: block;
     background: var(--color_primary);
-    border-radius: 50%;
+    border-radius: 50px;
     animation: ani-mouse 1.5s linear infinite;
 }
