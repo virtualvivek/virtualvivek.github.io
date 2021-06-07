@@ -5,10 +5,11 @@
     --color_text: #444;
     --color_light_primary: #FFF;
 }
-
+html,body {
+    margin: 0;
+    padding: 0;
+}
 body{
-	margin: 0;
-	padding: 0;
 	background-color: var(--color_background);
     color: var(--color_text);
 	overflow-x: hidden;
