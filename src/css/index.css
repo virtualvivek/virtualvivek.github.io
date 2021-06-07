@@ -31,12 +31,12 @@ hr {
 
 /* page styles ****************************/
 .page {
-    height: 90vh;
+    height: 95vh;
     width: 90vw;
     position: relative;
     display: inline-block;
     background: var(--color_background_page);
-    margin: 5vh auto;
+    margin: 2.5vh auto;
     display: block;
     border-radius: 22px;
     box-shadow: 0 0 15px #9f9f9f;
