@@ -39,7 +39,7 @@ hr {
     margin: 2.5vh auto;
     display: block;
     border-radius: 22px;
-    box-shadow: 0 0 15px #d8d8d8;
+    box-shadow: 0 0 25px #99999999;
     overflow: hidden;
 }
 .foreground{
@@ -208,7 +208,7 @@ hr {
         font-size: 1.4em;
     }
     .page {
-        height: 90vh;
+        height: 88vh;
     }
     .header-divider {
         height: 2vh;
@@ -256,6 +256,10 @@ hr {
     .project-image {
         margin: 10px 0 25px 0;
         width: 100%;
+    }
+    .iframe-blog {
+        width: 100%;
+        margin: 0 0 15px 0;
     }
 }
 @-moz-document url-prefix() {
