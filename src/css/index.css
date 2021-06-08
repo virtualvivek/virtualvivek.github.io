@@ -31,7 +31,7 @@ hr {
 
 /* page styles ****************************/
 .page {
-    height: 90vh;
+    height: 95vh;
     width: 90vw;
     position: relative;
     display: inline-block;
@@ -39,12 +39,14 @@ hr {
     margin: 2.5vh auto;
     display: block;
     border-radius: 22px;
-    box-shadow: 0 0 15px #9f9f9f;
+    box-shadow: 0 0 15px #d8d8d8;
     overflow: hidden;
 }
 .foreground{
     position: absolute;
     bottom: 0;
+    filter: contrast(0.95);
+    z-index: 0;
 }
 .foreground .trees {
     fill: var(--color_background)
@@ -72,8 +74,9 @@ hr {
 }
 .header-navbar {
     width: 90%;
-    list-style: none;
     height: 50px;
+    list-style: none;
+    position: relative;
     padding: 0;
     align-items: center;
     background: var(--color_background);
@@ -84,12 +87,8 @@ hr {
     z-index: 99;
     box-shadow: 0 2px 2px #dddddd99;
 }
-.header-navbar li {
-    padding: 10px;
-    z-index: 99;
-}
 .header-navbar a {
-    padding: 0 15px;
+    padding: 10px 25px;
 }
 .header-divider {
     height: 5vh;
@@ -208,6 +207,9 @@ hr {
     h1 {
         font-size: 1.4em;
     }
+    .page {
+        height: 90vh;
+    }
     .header-divider {
         height: 2vh;
     }
@@ -237,6 +239,10 @@ hr {
     .button-primary {
         font-size: 16px;
         font-weight: 700;
+    }
+    .scroll-btn a {
+        margin-left: 75%;
+        margin-top: -8%;
     }
     .section-flex {
         flex-direction: column;
