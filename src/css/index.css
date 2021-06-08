@@ -85,7 +85,7 @@ hr {
     margin: auto;
     border-radius: 12px;
     z-index: 99;
-    box-shadow: 0 2px 2px #dddddd99;
+    box-shadow: 0 0 2px #99999999;
 }
 .header-navbar a {
     padding: 10px 25px;
@@ -208,7 +208,7 @@ hr {
         font-size: 1.4em;
     }
     .page {
-        height: 88vh;
+        height: 86vh;
     }
     .header-divider {
         height: 2vh;
