@@ -38,8 +38,8 @@ hr {
     background: var(--color_background_page);
     margin: 2.5vh auto;
     display: block;
-    border-radius: 22px;
-    box-shadow: 0 0 25px #99999999;
+    border-radius: 28px;
+    box-shadow: 0 10px 20px #99999988;
     overflow: hidden;
 }
 .foreground{
@@ -52,7 +52,7 @@ hr {
     fill: var(--color_background)
 }
 .foreground .trees.base {
-    filter: drop-shadow(20px 20px 34px #88888888);
+    filter: drop-shadow(20px 0 4px #88888888);
 }
 .page.height-auto {
     height: auto;
@@ -65,6 +65,7 @@ hr {
     color: var(--color_primary);
 }
 .button-primary,
+.button-primary.border:hover,
 .page-hr {
     background-color: var(--color_primary);
 }
@@ -133,15 +134,23 @@ hr {
     padding: 10px 15px;
     margin-top: 25px;
     cursor: pointer;
+    transition: 0.2s ease;
     -webkit-tap-highlight-color: transparent;
 }
-.button-primary:hover {
-    box-shadow: 0 2px 8px #634a45;
-    transition: 0.2s ease;
+.button-primary:hover,
+.button-primary.border:hover {
+    box-shadow: 0 8px 12px #634a4577;
+    color: #fff;
 }
 .button-primary:active {
     transform: scale(0.950, 0.950);
     opacity: 0.8;
+}
+.button-primary.border {
+    background: transparent;
+    padding: 8px 15px;
+    border: 2px solid var(--color_primary);
+    color: var(--color_primary);
 }
 
 
@@ -174,8 +183,8 @@ hr {
 }
 .project-image {
     width: 510px;
-    filter: drop-shadow(0 12px 14px #99999944);
-    border-radius: 12px;
+    filter: drop-shadow(0 4px 2px #99999944);
+    border-radius: 22px;
     border: 1px solid #ddd;
 }
 .project-info {
