@@ -4,6 +4,9 @@ if(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matche
     document.documentElement.style.setProperty('--color_primary','#EFC6BE');
     document.documentElement.style.setProperty('--color_text','#FAFAFA');
     document.documentElement.style.setProperty('--color_light_primary','#634A45');
+    document.getElementsByClassName('repo-stars').style.filter("invert(1)");
+    document.getElementsByClassName('repo-forks').style.filter("invert(1)");
+    document.getElementsByClassName('repo-title').style.filter("invert(1)");
 }
 
 
@@ -18,7 +21,6 @@ function currentYPosition() {
     return 0;
 }
 
-
 function elmYPosition(eID) {
     var elm = document.getElementById(eID);
     var y = elm.offsetTop-80; // -80 for 50px padding
@@ -28,7 +30,6 @@ function elmYPosition(eID) {
         y += node.offsetTop;
     } return y;
 }
-
 
 function smoothScroll(eID) {
     var startY = currentYPosition();

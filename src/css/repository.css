@@ -1,0 +1,107 @@
+.repo-column.repo-container {
+    border-radius: 18px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    max-width: 550px;
+    margin: 0;
+}
+.flex-wrap {
+    flex-flow: wrap;
+}
+.repo-row {
+    flex-direction: row;
+}
+.repo-column {
+    flex-direction: column;
+}
+.repo-img {
+    width: 77px;
+    height: max-content;
+    margin-bottom: 20px;
+    border-radius: 12px;
+}
+.repo-header {
+    align-self: center;
+    font-size: 30px;
+    width: -webkit-fill-available;
+    text-align: center;
+    filter: drop-shadow(0 4px 6px #ddd);
+}
+.repo-title {
+    font-weight: 600;
+    color: #3182ce;
+}
+.repo-title::before {
+    content: url(../../assets/icons/github_cat.svg);
+}
+.repo-details {
+    opacity: 0.7;
+    font-size: 15px;
+    margin: 10px 0 15px 0;
+}
+
+.repo-stars::before {
+    content: url(../../assets/icons/github_star.svg);
+}
+.repo-forks::before {
+    content: url(../../assets/icons/github_fork.svg);
+}
+.repo-lang {
+    border-radius: 0.375rem;
+    font-size: 14px;
+    padding: 4px 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+.repo-lang.typescript {
+    background-color: #bee3f8;
+    color: #2a4365;
+}
+.repo-lang.javascript {
+    background-color: #f5f29f;
+    color: #744210
+}
+.repo-lang.react {
+    background-color: #c4f1f9;
+    color: #086f83;
+}
+.repo-lang.react-native {
+    background-color: #b2f5ea;
+    color: #234e52;
+}
+.repo-lang.java {
+    background-color: #ffd08c;
+    color: #986419;
+}
+.repo-lang.android {
+    background-color: #87f9ba;
+    color: #338A5A;
+}
+
+/* Commons */
+
+.repo-header,
+.repo-details {
+    color: var(--color_text);
+}
+
+.repo-row,
+.repo-column {
+  display: flex;  
+}
+.repo-stars,
+.repo-forks {
+    padding-right: 10px;
+}
+.repo-title::before,
+.repo-stars::before,
+.repo-forks::before {
+    padding-right: 10px;
+    vertical-align: middle;
+}
+
+@media only screen and (max-width: 760px) {
+    .repo-header {
+        display: none;
+    }
+}

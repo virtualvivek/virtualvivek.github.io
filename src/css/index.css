@@ -181,17 +181,6 @@ hr {
     padding: 3vw 0;
     justify-content: space-between;
 }
-.project-image {
-    width: 510px;
-    filter: drop-shadow(0 4px 2px #99999944);
-    border-radius: 22px;
-    border: 1px solid #ddd;
-}
-.project-info {
-    max-width: 32vw;
-    padding-top: 15px;
-    display: block;
-}
 .page-footer {
     padding: 20px;
     text-align: center;
@@ -252,19 +241,6 @@ hr {
     .scroll-btn a {
         margin-left: 75%;
         margin-top: -8%;
-    }
-    .section-flex {
-        flex-direction: column;
-    }
-    .section-flex.reverse {
-        flex-direction: column-reverse;
-    }
-    .project-info {
-        max-width: max-content;
-    }
-    .project-image {
-        margin: 10px 0 25px 0;
-        width: 100%;
     }
     .iframe-blog {
         width: 100%;
