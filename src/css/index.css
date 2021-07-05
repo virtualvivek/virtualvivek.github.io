@@ -231,6 +231,9 @@ hr {
     .foreground {
         height: 68vh;
     }
+    .section-flex {
+        flex-direction: column;
+    }
     .text-name {
         font-size: 46px;
     }

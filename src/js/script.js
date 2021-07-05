@@ -4,9 +4,9 @@ if(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matche
     document.documentElement.style.setProperty('--color_primary','#EFC6BE');
     document.documentElement.style.setProperty('--color_text','#FAFAFA');
     document.documentElement.style.setProperty('--color_light_primary','#634A45');
-    document.getElementsByClassName('repo-stars').style.filter("invert(1)");
-    document.getElementsByClassName('repo-forks').style.filter("invert(1)");
-    document.getElementsByClassName('repo-title').style.filter("invert(1)");
+    document.getElementById('repo-stars').style.filter="invert(1)";
+    document.getElementById('repo-forks').style.filter="invert(1)";
+    document.getElementById('repo-title').style.filter="invert(1)";
 }
 
 
@@ -23,7 +23,7 @@ function currentYPosition() {
 
 function elmYPosition(eID) {
     var elm = document.getElementById(eID);
-    var y = elm.offsetTop-80; // -80 for 50px padding
+    var y = elm.offsetTop-45; // -45 for 45px padding
     var node = elm;
     while (node.offsetParent && node.offsetParent != document.body) {
         node = node.offsetParent;

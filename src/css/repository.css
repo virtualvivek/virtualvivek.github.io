@@ -104,4 +104,8 @@
     .repo-header {
         display: none;
     }
+    .repo-row.lang {
+        margin-top: 10px;
+        width: 100%;
+    }
 }
