@@ -4,9 +4,16 @@ if(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matche
     document.documentElement.style.setProperty('--color_primary','#EFC6BE');
     document.documentElement.style.setProperty('--color_text','#FAFAFA');
     document.documentElement.style.setProperty('--color_light_primary','#634A45');
-    document.getElementById('repo-stars').style.filter="invert(1)";
-    document.getElementById('repo-forks').style.filter="invert(1)";
-    document.getElementById('repo-title').style.filter="invert(1)";
+    
+    document.querySelectorAll('.repo-title').forEach(function(element) {
+      element.className += " invert";
+    });
+    document.querySelectorAll('.repo-stars').forEach(function(element) {
+      element.className += " invert";
+    });
+    document.querySelectorAll('.repo-forks').forEach(function(element) {
+      element.className += " invert";
+    });
 }
 
 

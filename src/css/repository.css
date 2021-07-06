@@ -1,3 +1,5 @@
+/* Repository Styles */
+
 .repo-column.repo-container {
     border-radius: 18px;
     border: 1px solid #ddd;
@@ -14,6 +16,9 @@
 .repo-column {
     flex-direction: column;
 }
+.repo-column a {
+    text-decoration: none;
+}
 .repo-img {
     width: 77px;
     height: max-content;
@@ -25,7 +30,6 @@
     font-size: 30px;
     width: -webkit-fill-available;
     text-align: center;
-    filter: drop-shadow(0 4px 6px #ddd);
 }
 .repo-title {
     font-weight: 600;
@@ -74,29 +78,33 @@
     color: #986419;
 }
 .repo-lang.android {
-    background-color: #87f9ba;
+    background-color: #b8f3d2;
     color: #338A5A;
 }
 
 /* Commons */
 
-.repo-header,
-.repo-details {
-    color: var(--color_text);
-}
-
 .repo-row,
 .repo-column {
   display: flex;  
 }
+.repo-title,
 .repo-stars,
 .repo-forks {
-    padding-right: 10px;
+    padding-right: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.repo-title.invert::before,
+.repo-stars.invert::before,
+.repo-forks.invert::before {
+    filter: invert(1);
 }
 .repo-title::before,
 .repo-stars::before,
 .repo-forks::before {
-    padding-right: 10px;
+    padding-right: 5px;
     vertical-align: middle;
 }
 
