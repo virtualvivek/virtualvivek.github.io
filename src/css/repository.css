@@ -1,7 +1,7 @@
 /* Repository Styles */
 
 .repo-column.repo-container {
-    border-radius: 18px;
+    border-radius: 20px;
     border: 1px solid #ddd;
     padding: 15px;
     max-width: 550px;
@@ -18,10 +18,18 @@
 }
 .repo-column a {
     text-decoration: none;
+    transition: 0.4s;
+}
+.repo-column a:hover {
+    color: #3182ce;
+    font-weight: 600;
+    transition: 0.4s;
+    transform: translateY(-2%);
+    filter: drop-shadow(9px 20px 20px #ddd);
 }
 .repo-img {
     width: 77px;
-    height: max-content;
+    height: auto;
     margin-bottom: 20px;
     border-radius: 12px;
 }
