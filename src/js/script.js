@@ -1,3 +1,5 @@
+// Dark mode Light Mode Switch Script
+
 if(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches){
     document.documentElement.style.setProperty('--color_background','#636262');
     document.documentElement.style.setProperty('--color_background_page','#282828');
@@ -15,6 +17,33 @@ if(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matche
       element.className += " invert";
     });
 }
+
+
+// Avatar View Animation Script
+
+const images = [
+    { img: './assets/img/anim_avatar.png', time: 2000 },
+    { img: './assets/img/anim_avatar2.png', time: 90 },
+    { img: './assets/img/anim_avatar3.png', time: 110 }
+];
+
+const img = document.getElementById('avatar');
+let index = 0;
+
+function showNextAvatar() {
+  const image = images[index++];
+ if(index >= images.length){
+     index = 0;
+ }
+  
+  img.src = image.img;
+  setTimeout(showNextAvatar, image.time);
+};
+
+showNextAvatar();
+
+
+// Scrolling Animation Script
 
 
 function currentYPosition() {
