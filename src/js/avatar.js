@@ -1,6 +1,6 @@
 const images = [
     { img: './assets/img/anim_avatar.png', time: 2000 },
-    { img: './assets/img/anim_avatar2.png', time: 80 },
+    { img: './assets/img/anim_avatar2.png', time: 90 },
     { img: './assets/img/anim_avatar3.png', time: 110 }
 ];
 
